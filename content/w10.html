@@ -142,42 +142,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">HW3 << <a href='HW3.html'>Previous</a> <a href='w3.html'>Next</a> >> w3<br /><h1>w1</h1>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7XisYqXLV90?si=KFaOrCyTAFn5rG7c" title="YouTube video player" width="560"></iframe></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># 從  Brython 程式庫中的 browser 導入 html, 可用來輸出超文件內容
-# 而所導入的 document 可以指向網頁中的特定 id 內容
-from browser import html, document
-# 建立 url 變數與網站中 2a 學員的學號與帳號資料 URL 網誌字串對應
-url = "https://mde.tw/list/2a.txt"
-# 利用 open() 物件中的 readlines() 方法, 取出網站中的資料並逐行放入數列中, 因此 data 的資料型別為數列
-data = open(url).readlines()
-# 進行資料查驗時, 印出 data 數列內容
-#print(data)
-# 因為學員資料中的第一列為標題, 因此有效資料從索引值 1 開始
-all_stud = data[1:]
-# 利用 len() 函式查驗 all_stud 數列有幾筆資料, 因為要與前後的字串併接, 因此利用 str() 將整數轉為字串
-print("總共有 " + str(len(all_stud)) + "名學員")
-# 
-# 利用 document[] 取得 id 為 "brython_div1" 的位置, 然後與 brython_div1 變數對應
-brython_div1 = document["brython_div1"]
-# 利用 Brython 的 "&lt;=" 特殊符號, 將右值帶有字串與超文件內容物件插入 brython_div1 變數所指定的位置
-# 其中利用 html.A 建立 anchor 標註物件, 第一個變數為 anchor 字串, 第二個變數則為 hyper text reference
-brython_div1 &lt;= "1. " + html.A("2a-ag6", href="https://mdecd2025.github.io/2a-ag6/") + html.A("(repo)", href="https://github.com/mdecd2025/2a-ag6")
-# 利用 html.BR() 插入 break 標註
-brython_div1 &lt;= html.BR()
-brython_div1 &lt;= "2. " + html.A("41223110", href="https://github.com/mdecd2025/hw-41223110")+ html.A("(repo)", href="https://github.com/mdecd2025/hw-41223110")
-brython_div1 &lt;= html.BR()
-brython_div1 &lt;= "3. " + html.A("41223133", href="https://mdecd2025.github.io/hw-41223133/")+ html.A("(repo)", href="https://github.com/mdecd2025/hw-41223133")
-brython_div1 &lt;= html.BR()
-brython_div1 &lt;= "4. " + html.A("41223129", href="https://mdecd2025.github.io/hw-hong41223129/")+ html.A("(repo)", href="https://github.com/mdecd2025/hw-hong41223129")
-brython_div1 &lt;= html.BR()
-brython_div1 &lt;= "5. " + html.A("41223147", href="https://mdecd2025.github.io/hw-41223147/")+ html.A("(repo)", href="https://github.com/mdecd2025/hw-41223147")
-brython_div1 &lt;= html.BR()
-brython_div1 &lt;= "6. " + html.A("41223125", href="https://mdecd2025.github.io/hw-Linjiahong41223125")+ html.A("(repo)", href="https://github.com/mdecd2025/hw-Linjiahong41223125")
-brython_div1 &lt;= html.BR()
-brython_div1 &lt;= "7. " + html.A("41223132", href="https://mdecd2025.github.io/hw-CHN41223132/")+ html.A("(repo)", href="https://github.com/mdecd2025/hw-CHN41223132")</pre>
-<div id="brython_div1">1.<span> </span><a href="https://mdecd2025.github.io/2a-ag6/">2a-ag6</a><a href="https://github.com/mdecd2025/2a-ag6">(repo)</a><br/>2.<span> </span><a href="https://github.com/mdecd2025/hw-41223110">41223110</a><a href="https://github.com/mdecd2025/hw-41223110">(repo)</a><br/>3.<span> </span><a href="https://mdecd2025.github.io/hw-41223133/">41223133</a><a href="https://github.com/mdecd2025/hw-41223133">(repo)</a><br/>4.<span> </span><a href="https://mdecd2025.github.io/hw-hong41223129/">41223129</a><a href="https://github.com/mdecd2025/hw-hong41223129">(repo)</a><br/>5.<span> </span><a href="https://mdecd2025.github.io/hw-41223147/">41223147</a><a href="https://github.com/mdecd2025/hw-41223147">(repo)</a><br/>6.<span> </span><a href="https://mdecd2025.github.io/hw-Linjiahong41223125">41223125</a><a href="https://github.com/mdecd2025/hw-Linjiahong41223125">(repo)</a><br/>7.<span> </span><a href="https://mdecd2025.github.io/hw-CHN41223132/">41223132</a><a href="https://github.com/mdecd2025/hw-CHN41223132">(repo)</a></div>
-<br />HW3 << <a href='HW3.html'>Previous</a> <a href='w3.html'>Next</a> >> w3</div>
+    <div id="tipue_search_content">w6 << <a href='w6.html'>Previous</a> <a href='task.html'>Next</a> >> task<br /><h1>w10</h1><br />w6 << <a href='w6.html'>Previous</a> <a href='task.html'>Next</a> >> task</div>
         
     <!-- footer -->
       <div class="container">
