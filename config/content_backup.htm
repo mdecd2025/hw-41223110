@@ -46,8 +46,7 @@
 <p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/41223110_nfu_edu_tw/EaTocbjonTRDgvdkO7BktOMBBXjZfUKP6eb4W9HqmFhdbA?e=aNeNVd">HW1.zip</a></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/2H9blCyYNwY?si=81paxNk8nnZ13eNi" title="YouTube video player" width="560"></iframe></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/TXbLWDtahqs?si=RvjWqihXBHpDFBmH" title="YouTube video player" width="560"></iframe></p>
-<p></p>
-<h2>HW2</h2>
+<p> 啟動 Webots，創建新世界，新增 Robot，在 children 新增 Solid joint1 joint4。<br/>Solid(節點代表剛體，即可以忽略變形的物體。剛體中任意兩點之間的距離無論外力如何作用，都保持恆定。) →Shape(定義一個可見物體，裡面包含外表和幾何形狀)<br/>JOINT1(device 加馬達) → LINK1 Pose(定位) → JOINT2 → LINK2 → JOINT3 → LINK3，JOINT4 (closed chain 約束)<br/>JOINT1(HingeJoint 的旋轉中心位置是由 jointParameters 物件下的 anchor 欄位決定, 而其旋轉軸則由 axis 欄位決定)</p><h2>HW2</h2>
 <p>HW2 (5%): <span style="background-color: #ffff00;">建立由 CAD 繪製零件組成的平面四連桿機構 Webots 模擬場景</span></p>
 <p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 HW2 - 學員學號</p>
 <p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/41223110_nfu_edu_tw/ESoCZq88rnxPmox2tXKJ2EEBrlbHkY8ZeW6iFtDvmYfCrg?e=uc2oF6">HW2.zip</a></p>
@@ -405,7 +404,8 @@ for i in all_stud:
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zLgNR7Z_PGo?si=D20zMrtplpP6UdDz" title="YouTube video player" width="560"></iframe></p>
 <p><span>Exam3-3</span></p>
 <p><span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/41223110_nfu_edu_tw/EYZ-3twMxSVCuZCpFM6AUHsBYf0_pOErxnBj6o5lfPky-A?e=dztqCU">Exam3-3.zip</a></span></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/DospNNAiXM0?si=hZPowxaGDG6iRwRL" title="YouTube video player" width="560"></iframe></p><h1>Final</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/DospNNAiXM0?si=hZPowxaGDG6iRwRL" title="YouTube video player" width="560"></iframe></p>
+<p>心得:利用webotsw --steam 啟動 webots 的串流，改成外部連接並讓他運作，這時他應該是沒有運行的狀態才對，在 Windows 環境中使用 Edge 連線至 http://localhost:1234 並將 localhost 更改成 sever 端的IP位置，執行 server 然後再執行 client 後進行控制，client的IP位置要是sever端成員的IP位置得以連接，IPV6 或 IPV4 都可連接。</p><h1>Final</h1>
 <p><span>期末協同專案執行過程影片、簡報與 PDf 報告檔案 (六人一組) (30%)</span></p>
 <p><span>題目: <span style="background-color: #ccffcc;">Webots 動態投籃模擬系統的協同設計</span></span></p>
 <p><span>說明: </span></p>
