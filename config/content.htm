@@ -310,6 +310,11 @@ for i in all_stud:
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/P2KVFMJ-wXc?si=cXrJsmTc-nQRDTtN" title="YouTube video player" width="560"></iframe></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/k-nOd9dO5H4?si=LEQ6SL6DXkSJg3jI" title="YouTube video player" width="560"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/oBYFx0VL45E?si=X_Mm0W8XM4fyqzza" title="YouTube video player" width="560"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/s3LitHFYlss?si=SWt3n7thCT28bgA1" title="YouTube video player" width="560"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7XO276yANHg?si=qiB5PT3dGnvFTJza" title="YouTube video player" width="560"></iframe></p>
 <h2>task4</h2>
+<p>在 Webots 中，建立場景時需要先建立一個 Robot 物件的原因，與 Webots 的模擬架構和工作原理密切相關。以下是詳細解釋：</p>
+<p><br/>1. Webots 的核心設計理念<br/><br/>Webots 是一個用於模擬機器人行為的平台，它的場景（world）是由多個物件（nodes）組成的樹狀結構。而 Robot 物件是一個特殊的節點（node），它不僅代表一個實體機器人，還承載了與模擬環境交互的核心功能，例如感測器、執行器和控制器。沒有 Robot 物件，場景就缺少一個主體來執行具體的任務或行為，模擬也就失去了意義。</p>
+<p>2. Robot 物件的功能<br/><br/>    控制器綁定：每個 Robot 物件都需要指定一個控制器（controller），這是用來定義機器人行為的程式（可以用 C、C++、Python 等語言編寫）。沒有 Robot，就無法運行控制器，也無法模擬機器人的動作或決策。<br/>    感測器與執行器：Robot 物件是感測器（例如攝影機、距離感測器）和執行器（例如馬達、輪子）的容器。這些設備必須依附於一個 Robot 節點才能運作。<br/>    物理屬性：Robot 物件定義了機器人在模擬環境中的物理存在，例如位置、質量和形狀。如果沒有這個物件，場景中就沒有可以與物理引擎交互的實體。<br/><br/>3. 場景的結構要求<br/><br/>在 Webots 中，場景檔案（.wbt 檔案）是一個層次化的描述，所有的節點都必須遵循一定的語法規則。Robot 節點通常作為場景中的頂層節點之一，直接或間接連接到根節點（World）。如果沒有 Robot，場景可能只包含靜態物件（例如牆壁或地板），但無法進行動態模擬，因為缺少能夠主動參與模擬的實體。</p>
+<p>4. 實際操作中的必要性<br/><br/>當你建立一個 Webots 場景時，通常的目的是模擬某個機器人的行為（例如移動、避障、抓取物品等）。因此，第一步通常是定義一個 Robot 物件，然後在這個物件下添加必要的子節點（例如 DifferentialWheels、感測器等），以實現模擬目標。換句話說，Robot 是場景的起點，沒有它，後續的配置就無從談起。</p>
+<p>總結<br/><br/>建立 Webots 場景需要先建立 Robot 物件，因為它是模擬的核心實體，承載了控制器、感測器、執行器和物理屬性等功能。沒有 Robot，場景就只是一個靜態的環境，無法實現動態的機器人模擬。這是 Webots 設計上的基本要求，也是模擬流程的邏輯起點。</p>
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false"># 甲班學員資料處理
 url = "https://mde.tw/list/2a.txt"
 data = open(url).readlines()
@@ -342,8 +347,7 @@ for i in all_stud:
     if stud_github not in b_all_members:
         print(stud_num)</pre>
 <p>甲班:<br/>41023220<br/>41223111<br/>41223119<br/>41223124<br/>41223148</p>
-<p>乙班:<br/>40923137<br/>41023237<br/>41223210<br/>41223214<br/>41223232<br/>41223233<br/>41223239<br/>41271217<br/>41271236</p>
-<h2>task5</h2>
+<p>乙班:<br/>40923137<br/>41023237<br/>41223210<br/>41223214<br/>41223232<br/>41223233<br/>41223239<br/>41271217<br/>41271236</p><h2>task5</h2>
 <h4 data-end="766" data-start="753">3.摘要出下列內容:</h4>
 <p data-end="69" data-start="17"><strong data-end="69" data-start="17">Webots User Guide R2025a: Introduction to Webots</strong></p>
 <p data-end="230" data-start="71">Webots 是一款專業的機器人仿真軟體，提供快速原型設計環境，讓使用者可以創建具有物理屬性（如質量、關節、摩擦係數等）的 3D 虛擬世界。使用者可以在 Webots 中創建被動或主動物體，並模擬不同的移動機構（如輪式、步態或飛行機器人）。這些機器人可以搭載各種傳感器和驅動裝置，並且可以透過程式編寫來展現所需的行為。</p>
